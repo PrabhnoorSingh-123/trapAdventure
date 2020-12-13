@@ -1,6 +1,6 @@
 class Ground{
-    constructer(){
-        this.body=createSprite()
+    constructor(){
+        this.body=createSprite(600,780,1200,10)
     }
    
    

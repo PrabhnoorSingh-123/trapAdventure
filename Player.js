@@ -1,11 +1,17 @@
 class Player{
- constructer(){
-     this.body=createSprite(200,200,50,50)
+ constructor(){
+     this.body=createSprite(200,200,20,50)
      this.body.shapeColor="red"
  }
-display(){
-drawSprites()
+
+jump(){
+this.body.velocityY=-5
 
 }
+display(){
+  this.body.velocityY=this.velocityY+0.5
+  this.body.collide(ground.body)
+}
+
 
 }
